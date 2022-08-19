@@ -1,0 +1,472 @@
+
+/* Comienzo de CSS */
+
+* {                                    
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: radial-gradient(circle at 45.79% 1.85%, #b8b88c 0, #b4ad86 10%, #aa9f7f 20%, #9c8f77 30%, #897d6e 40%, #716a64 50%, #575859 60%, #404a4f 70%, #2a3e45 80%, #16353c 90%, #012e34 100%);
+    font-family: 'Quattrocento', serif;  
+}
+
+
+.grid-container{                                                /*GRID*/
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 100px 1050px 300px;
+    grid-template-columns: auto;
+    align-items: baseline;
+}
+
+
+
+
+
+.topheader {                                             /*Cabecera de Pagina-Grid y Flex*/
+    grid-area: header;
+    box-shadow: 0 4px 5px #ffffff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #716a64;
+}
+  
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+  
+                                                                  
+  
+.logo img {                                                          /* Logo */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+  
+  
+.menu {                                                              /* Menu */
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu li {
+    padding: 0 15px;
+}
+  
+.menu a {
+    display: flex;
+    color: rgb(255, 249, 249);
+    text-decoration: none;
+    text-align: center;  
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: max-content;
+    border-radius: 5px;
+    transition: .5s;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+
+.menu a:hover {
+    background-color: #111;
+    font-size: 17px;
+}
+
+.open-menu {
+    display: none;
+} 
+
+
+.main {                                                   /*contenido de la pagina-Grid y Flex*/
+    grid-area: main;
+}
+
+
+.titulo__principal {  
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow:#000 2px 1px ;
+    
+}
+
+
+
+.Subtitulo {
+    display: flex;
+    justify-content: left;
+    color: #ffffff;
+    text-shadow: 10px  #ffffff;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+
+.parrafo {
+    display: flex;
+    background-color: #bbb;
+    padding: 2%;
+    margin-bottom: 5%;
+    color: #111010;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.imagen__1 {
+    display: flex;
+    justify-content: right;
+    background-color: #bbb;
+    padding: 15px;
+    margin:5% 0%
+}
+
+  
+.img1 {
+    box-shadow: 2px 4px 10px 0px #000;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+
+
+.imagen__2 {
+    display: flex;
+    justify-content: right;
+    background-color: #bbb;
+    padding: 15px;
+    
+}
+  
+.img2 {
+    box-shadow: 2px 4px 10px 0px #000;
+    margin-left: 2%;
+    margin-right: 1%;
+    border-radius: 5px;;   
+}
+
+
+
+
+/*Descripcion de servicios*/
+
+
+.section__lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    width:300px;
+    height: 400px;
+	padding:20px;
+	margin:auto;
+	background-color:#bbb;
+    text-decoration: none;
+}
+
+.section__item {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*galeria de imagenes-Grid*/  
+
+
+.imagenes__section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    overflow: hidden;
+}
+
+.img{
+    height: 200px;
+    width: 200px;
+    box-shadow: 10px 10px 10px;
+    transition: all 0.5s ease-in-out;
+}
+.img:hover{
+    height: 210px;
+    width: 205px;
+}
+
+
+/*Formulario de Contacto  */  
+                    
+
+form{                                                                               
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+    font-family: 'Quattrocento', serif;  
+}
+
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"]{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+
+form input[type="tel"]{
+    width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(19, 110, 185);
+} 
+
+
+form input[type="reset"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:rgb(151, 48, 32);
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+form input[type="reset"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+.footer {                                           /*Footer y Redes Sociales-Grid y Flex */
+    grid-area: footer;
+    background-color: #24262b;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+    width: 100%;
+    box-shadow: 0 4px 15px #ffffff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer li{
+    list-style-type: none;
+} 
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-col .social-links a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    height: 43px;
+    width: 43px;
+}
+
+h3 {
+    display: flex;
+    justify-content:left;
+    font-size: 20px;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-left: 15px; 
+}
+
+
+
+/*Responsive*/
+
+
+@media screen and (max-width: 768px) {
+    /* Menu */
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-color: #2a3e45;
+      height: 100%;
+      overflow-y: auto;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  
+    .menu_opened {
+      opacity: 1;
+      pointer-events: all;
+      color: #ffffff;
+    }
+
+    /* Footer */
+
+    .footer-col{
+        width: 50%;
+    }
+    
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
