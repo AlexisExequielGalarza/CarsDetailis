@@ -52,6 +52,11 @@ body{
     border-radius: 50%;
     width: 60px;
     height: 60px;
+    transition: all 2s;
+}
+
+.logo img:hover{
+    -webkit-transform: rotateY(360deg);
 }
   
   
@@ -144,6 +149,11 @@ body{
     margin-left: 2%;
     margin-right: 1%;
     border-radius: 5px;
+    transition: all 2s ease-in-out;
+}
+
+.img1:hover{
+    -webkit-transform: rotateY(360deg);
 }
 
 
@@ -160,7 +170,12 @@ body{
     box-shadow: 2px 4px 10px 0px #000;
     margin-left: 2%;
     margin-right: 1%;
-    border-radius: 5px;;   
+    border-radius: 5px;
+    transition: all 2s ease-in-out;   
+}
+
+.img2:hover{
+    -webkit-transform: rotateY(360deg);
 }
 
 
