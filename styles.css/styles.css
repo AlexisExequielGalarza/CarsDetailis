@@ -25,6 +25,47 @@ body{
 }
 
 
+.fondo-nave{
+    background-color: #716a64;
+    box-shadow: 0 4px 5px #ffffff;
+    padding: 0 20px;
+    max-width: 100%; 
+    
+}
+
+.lista-ul{
+    flex-wrap: nowrap;
+}
+
+.letra-lista{
+    color: rgb(255, 249, 249);
+}
+
+.lista-a{
+    color: rgb(255, 249, 249);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    transition: .5s;
+    position: relative;
+}
+
+.lista-a:hover{
+    background-color: #111;
+    font-size: 17px;
+}
+
+.logo-nuevo{
+    border-radius: 50%;
+    padding-top: 3px;
+    width: 60px;
+    height: 60px;
+    transition: all 2s;
+}
+
+.logo-nuevo:hover{
+    transform: rotateY(360deg);
+}
+
 
 
 
@@ -71,7 +112,7 @@ body{
     padding: 0 15px;
 }
   
-.menu a {
+/*.menu a {
     display: flex;
     color: rgb(255, 249, 249);
     text-decoration: none;
@@ -93,7 +134,7 @@ body{
 
 .open-menu {
     display: none;
-} 
+} */
 
 
 .main {                                                   /*contenido de la pagina-Grid y Flex*/
@@ -431,7 +472,7 @@ h3 {
 
 @media screen and (max-width: 768px) {
     /* Menu */
-    .menu {
+    /*.menu {
       flex-direction: column;
       position: fixed;
       left: 0;
@@ -458,7 +499,7 @@ h3 {
       opacity: 1;
       pointer-events: all;
       color: #ffffff;
-    }
+    }*/
 
     /* Footer */
 

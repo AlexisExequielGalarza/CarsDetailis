@@ -6,12 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shorcut icon" href="./images/logo1(1) - copia.ico">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <!--link de mi css-->
         <link rel="stylesheet" href="./styles.css/styles.css">
         <script src="https://kit.fontawesome.com/137baa84b9.js" crossorigin="anonymous"></script>
         <title>Cars Detailis</title>
     </head>
     <body class="grid-container">
-        <header class="topheader">
+        <!-- header class="topheader">
             <nav class="topnav">
               <a href="#" class="logo"><img height="50" width="50" src="./images/logo1(1).jpg" alt="logo de cars detailis"/></a>
               <button class="open-menu" aria-label="Abrir menú"><img src="./images/hamburger-icon.svg" alt="abrir menú" /></button>
@@ -23,7 +26,50 @@
                 <li><a href="../pages/Contacto.html">CONTACTO</a></li>
               </ul>
             </nav>
+        </header -->
+
+
+        <header class="container p-30 fondo-nave">
+            <div class="row ">
+                <a href="#" class="col-4"><img class="logo-nuevo" src="./images/logo1(1).jpg" alt="logo de cars detailis"/></a>
+                <nav class="navbar navbar-expand-lg col-8 menu-nav  ">
+                    <div class="container-fluid">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 lista-ul ">
+                          <li class="nav-item   lista-li">
+                            <a class="nav-link active text-light lista-a" aria-current="page" href="#">INICIO</a>
+                          </li>
+                          <li class="nav-item lista-li ">
+                            <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/serviciosdetailing.html">SERVICIOS DE DETALING</a>
+                          </li>
+                          <li class="nav-item lista-li">
+                            <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/serviciosdegestoria.html">SERVICIOS DE GESTORIA</a>
+                          </li>
+                          <li class="nav-item lista-li">
+                            <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/galeria.html">GALERIA</a>
+                          </li>
+                          <li class="nav-item lista-li">
+                            <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
         </header>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    
+
+
+
+
+
+
+
         <main class="main">                                   <!-- informacion sobre la empresa -->
             <section>
                 <h1 class="titulo__principal">
@@ -60,10 +106,10 @@
                         <h4>Website</h4>
                         <ul>
                             <li><a href="#">inicio</a></li>
-                            <li><a href="../pages/ServiciosDeGestoria.html">Servicios de Gestoria</a></li>
-                            <li><a href="../pages/ServiciosDetailing.html">Servicios Detailing</a></li>
-                            <li><a href="../pages/Galeria.html">Galeria</a></li>
-                            <li><a href="../pages/Contacto.html">Contacto</a></li>
+                            <li><a href="./pages/serviciosdegestoria.html">Servicios de Gestoria</a></li>
+                            <li><a href="./pages/serviciosdetailing.html">Servicios Detailing</a></li>
+                            <li><a href="./pages/galeria.html">Galeria</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
