@@ -13,52 +13,37 @@
         <script src="https://kit.fontawesome.com/137baa84b9.js" crossorigin="anonymous"></script>
         <title>Cars Detailis</title>
     </head>
-    <body class="grid-container">
-        <!-- header class="topheader">
-            <nav class="topnav">
-              <a href="#" class="logo"><img height="50" width="50" src="./images/logo1(1).jpg" alt="logo de cars detailis"/></a>
-              <button class="open-menu" aria-label="Abrir menú"><img src="./images/hamburger-icon.svg" alt="abrir menú" /></button>
-              <ul class="menu">
-                <li><a href="#">INICIO</a></li>
-                <li><a href="../pages/ServiciosDetailing.html">SERVICIOS DE DETALING</a></li>
-                <li><a href="../pages/ServiciosDeGestoria.html">SERVICIOS DE GESTORIA</a></li>
-                <li><a href="../pages/Galeria.html">GALERIA</a></li>
-                <li><a href="../pages/Contacto.html">CONTACTO</a></li>
-              </ul>
-            </nav>
-        </header -->
 
 
-        <header class="container p-30 fondo-nave">
-            <div class="row ">
-                <a href="#" class="col-4"><img class="logo-nuevo" src="./images/logo1(1).jpg" alt="logo de cars detailis"/></a>
-                <nav class="navbar navbar-expand-lg col-8 menu-nav  ">
+    <body class="container-fluid">
+        <header class="row header fondo-nave">
+                <nav class="col navbar navbar-expand-lg menu-nav">
                     <div class="container-fluid">
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <a href="#" class="col"><img class="logo-nuevo" src="./images/logo1(1).jpg" alt="logo de cars detailis"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                      </button>
+                    </button>
                       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 lista-ul ">
-                          <li class="nav-item   lista-li">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lista-ul ">
+                          <li class="nav-item ms-auto   lista-li">
                             <a class="nav-link active text-light lista-a" aria-current="page" href="#">INICIO</a>
                           </li>
-                          <li class="nav-item lista-li ">
+                          <li class="nav-item ms-auto lista-li ">
                             <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/serviciosdetailing.html">SERVICIOS DE DETALING</a>
                           </li>
-                          <li class="nav-item lista-li">
+                          <li class="nav-item ms-auto lista-li">
                             <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/serviciosdegestoria.html">SERVICIOS DE GESTORIA</a>
                           </li>
-                          <li class="nav-item lista-li">
+                          <li class="nav-item ms-auto lista-li">
                             <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/galeria.html">GALERIA</a>
                           </li>
-                          <li class="nav-item lista-li">
+                          <li class="nav-item ms-auto lista-li">
                             <a class="nav-link active text-light lista-a" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
                           </li>
                         </ul>
                       </div>
                     </div>
-                  </nav>
-            </div>
+                </nav>
         </header>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
@@ -70,9 +55,9 @@
 
 
 
-        <main class="main">                                   <!-- informacion sobre la empresa -->
-            <section>
-                <h1 class="titulo__principal">
+        <main class="row main">                                   <!-- informacion sobre la empresa -->
+            <section class="container">
+                <h1 class="titulo-principal">
                     CARS DETAILIS
                 </h1>
                 <h2 class="Subtitulo">
@@ -91,8 +76,10 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">                              <!-- Footer con redes sociales y Copyright -->
-            <div class="container">
+
+
+        <footer class="footer row">                              <!-- Footer con redes sociales y Copyright -->
+            <div class="container-fluid">
                 <div class="row">
                     <div class="footer-col">
                         <h4>Empresa</h4>
