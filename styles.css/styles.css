@@ -330,7 +330,7 @@ h3 {
     color: #bbbbbb;
     margin-bottom: 20px;
     margin-top: 40px;
-    margin-left: 15px; 
+     
 }
 
 
@@ -341,7 +341,7 @@ h3 {
 @media screen and (max-width: 768px) {
   
     .footer-col{
-        width: 50%;
+        width: 100%;
     }
     
 }
