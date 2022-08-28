@@ -81,6 +81,30 @@ body{
     
 }
 
+.titulo-gestoria{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow:#000 2px 1px ;
+    background-image: url(../images/slider-gestoria-automotor.jpg);
+}
+
+.titulo-detailing{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow:#000 2px 1px ;
+    background-image: url(../images/shutterstock_776160316-1-scaled.jpg);
+}
+
 
 
 .Subtitulo {
@@ -147,31 +171,6 @@ body{
 }
 
 
-
-
-
-
-
-.section__lista {                                                          /*Descripcion de servicios*/
-    display: flex;
-    justify-content: center;
-    flex-direction: column ;
-    width:300px;
-    height: 400px;
-	padding:20px;
-	margin:auto;
-	background-color:#bbb;
-    text-decoration: none;
-}
-
-.section__item {
-    list-style-type: none;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
 .fondo-tarjeta{
     background-color: #bbb;
     box-shadow: 2px 4px 10px 0px #000;
@@ -180,9 +179,9 @@ body{
 
 
 
-.fieldset {                                                                   /*Formulario de Contacto  */  
+.formulario {                                                                   /*Formulario de Contacto  */  
     width: 40%;
-    min-width: 350px;
+    min-width: 250px;
     padding: 30px;
     margin: 25px auto;
     background: rgba(0, 0, 0, .5);
@@ -190,14 +189,14 @@ body{
     border-radius: 20px;
 }
 
-.fieldset p {
+.formulario p {
     margin-bottom: 50px;
     color: #fff;
     text-align: center;
     font-size: 1.5em;
 }
 
-.fieldset .label .input {
+.formulario .label .input {
     width: 100%;
     padding: 15px 0;
     font-size: 1em;
@@ -257,7 +256,11 @@ body{
 
 .footer li{
     list-style-type: none;
-} 
+}
+
+.footer ul{
+    padding-left: 0%;
+}
 
 .footer-col{
     width: 25%;
@@ -307,7 +310,7 @@ body{
 .social-links{
     display: flex;
     justify-content: flex-start;
-    padding-left: 2em;
+    padding-left: 0%;
 }
 
 .footer-col .social-links a{
@@ -315,22 +318,49 @@ body{
     height: 40px;
     width: 40px;
     margin: 0 10px 10px 0;
-    transition: all 0.5s ease;
 }
 
-.footer-col .social-links a:hover{
-    height: 43px;
-    width: 43px;
+
+.redes-instagram{
+    transition: all 0.6s;
 }
+
+.redes-instagram:hover{
+    border-radius: 100%;
+    background-color: #c32aac;
+    transform: rotate(360deg);
+}
+
+
+.redes-facebook{
+    transition: all 0.6s;
+    
+}
+
+.redes-facebook:hover{
+    border-radius: 100%;
+    background-color: #597ce5;
+    transform: rotate(360deg);
+}
+
+.redes-gmail{
+    transition: all 0.6s;
+}
+
+.redes-gmail:hover{
+    border-radius: 100%;
+    background-color: #de0909;
+    transform: rotate(360deg);
+}
+
 
 h3 {
     display: flex;
-    justify-content:left;
-    font-size: 20px;
+    justify-content:center;
+    font-size: 15px;
     color: #bbbbbb;
     margin-bottom: 20px;
     margin-top: 40px;
-     
 }
 
 
@@ -339,6 +369,22 @@ h3 {
 
 
 @media screen and (max-width: 768px) {
+
+    .titulo-principal {  
+        display: flex;
+        justify-content: center;  
+        text-align: center;
+        font-size: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        line-height: 100px;
+        color:   #bbb;  
+        text-shadow:#000 2px 1px ;
+        
+    }
+
+
+
   
     .footer-col{
         width: 100%;
