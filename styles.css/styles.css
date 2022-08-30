@@ -90,7 +90,6 @@ body{
     line-height: 100px;
     color:   #bbb;  
     text-shadow:#000 2px 1px ;
-    background-image: url(../images/slider-gestoria-automotor.jpg);
 }
 
 .titulo-detailing{
@@ -174,6 +173,28 @@ body{
 .fondo-tarjeta{
     background-color: #bbb;
     box-shadow: 2px 4px 10px 0px #000;
+}
+
+
+
+.imagen-fondo{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/DetalleInterior.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0%;
+}
+
+.imagen-fondo-gestoria{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../images/slider-gestoria-automotor.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    padding: 0%;
 }
 
 
@@ -394,7 +415,12 @@ h3 {
 
   
 
-
+@media screen and (min-width: 992px){
+    .col-lg-8 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
 
 
 
