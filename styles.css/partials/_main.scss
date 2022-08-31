@@ -1,0 +1,242 @@
+/*TITULOS DE CADA HTML*/
+
+
+.imagen-fondo-inicio{
+    width: 100%;
+    height: 70vh;
+    background-image:$inicioBackgroundimg;
+    margin: auto;
+    padding: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.titulo-principal {  
+    display: flex;
+    justify-content: center;  
+    font-size: 80px;
+    margin-top: 150px;
+    margin-bottom: 300px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow: $shadowTitulo;
+    
+}
+
+
+
+.titulo-detailing{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow:$shadowTitulo;
+    background-image: $tituloBackgroundimg;
+}
+
+
+
+.Subtitulo {
+    display: flex;
+    justify-content: left;
+    color: #ffffff;
+    text-shadow: 10px  #ffffff;
+}
+
+/*SECTION DE INICIO*/
+
+.parrafo {
+    display: flex;
+    background-color: #bbb;
+    padding: 2%;
+    margin-bottom: 5%;
+    color: #111010;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+
+.imagen__1 {
+    display: flex;
+    justify-content: right;
+    background-color: #bbb;
+    padding: 15px;
+    margin:5% 0%;
+    .img1 {
+        box-shadow: 2px 4px 10px 0px #000;
+        margin-left: 2%;
+        margin-right: 1%;
+        border-radius: 5px;
+        transition: all 2s ease-in-out;
+        &:hover{
+            transform: rotateY(360deg);
+        }
+    }
+}
+
+.imagen__2 {
+    display: flex;
+    justify-content: right;
+    background-color: #bbb;
+    padding: 15px;
+    .img2 {
+        box-shadow: 2px 4px 10px 0px #000;
+        margin-left: 2%;
+        margin-right: 1%;
+        border-radius: 5px;
+        transition: all 2s ease-in-out; 
+        &:hover{
+            transform: rotateY(360deg);
+        }  
+    }
+    
+}
+  
+
+
+/*TARJETAS*/
+
+
+.fondo-tarjeta{
+    background-color: #bbb;
+    box-shadow: 2px 4px 10px 0px #000;
+}
+
+
+.imagen-fondo-gestoria{
+    width: 100%;
+    height: 70vh;
+    background-image: $gestoriaBackgroundimg;
+    margin: auto;
+    padding: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo-gestoria{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow: $shadowTitulo;
+}
+
+.titulo-galeria{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow: $shadowTitulo;
+}
+
+
+
+
+/*FORMULARIO DE CONTACTO*/
+
+.titulo-contacto{
+    display: flex;
+    justify-content: center;  
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow: $shadowTitulo;
+}
+
+.imagen-fondo-contacto{
+    width: 100%;
+    height: 70vh;
+    background-image: $contactoBackgroundimg;
+    margin: auto;
+    padding: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.formulario {                                                                   
+    width: 40%;
+    min-width: 250px;
+    padding: 30px;
+    margin: 25px auto;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+    .formulario p {
+        margin-bottom: 50px;
+        color: #fff;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .formulario .label .input {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1em;
+        color: #fff;
+        margin-bottom: 100px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+        margin: 15px auto;
+    }
+    
+    .coment {
+        width: 100%;
+        height: 124px;
+        margin: 15px auto;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 2px solid rgb(204, 204, 204);
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+    }
+    
+    .form-label{
+        color: #bbbbbb;
+    }
+}
+
+.btn{
+    background-color: #4b6de9;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .titulo-principal {  
+        display: flex;
+        justify-content: center;  
+        text-align: center;
+        font-size: 50px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        line-height: 100px;
+        color:   #bbb;  
+        text-shadow:#000 2px 1px ;
+        
+    }
+}

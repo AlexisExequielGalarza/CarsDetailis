@@ -1,0 +1,140 @@
+/*FOOTER*/
+
+.footer {                                                                     
+    background-color:$footerBackground;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 0%;
+    box-shadow: 0 4px 15px #ffffff;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+.footer ul{
+    padding-left: 0%;
+    .footer li{
+        list-style-type: none;
+    }
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+}
+
+
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    &:hover{
+        color: #ffffff;
+        padding-left: 8px;
+    }
+}
+
+
+
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0%;
+}
+
+.footer-col .social-links a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+}
+
+
+.redes-instagram{
+    transition: all 0.6s;
+    &:hover{
+        border-radius: 100%;
+        background-color: #c32aac;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.redes-facebook{
+    transition: all 0.6s;
+    &:hover{
+        border-radius: 100%;
+        background-color: #597ce5;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.redes-gmail{
+    transition: all 0.6s;
+    &:hover{
+        border-radius: 100%;
+        background-color: #de0909;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+h3 {
+    display: flex;
+    justify-content:center;
+    font-size: 15px;
+    color: #bbbbbb;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+
+/*RESPONSIVE DE FOOTER*/
+
+
+@media screen and (max-width: 768px){
+    .footer-col{
+        width: 100%;
+    }
+}
