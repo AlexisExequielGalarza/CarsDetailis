@@ -4,9 +4,8 @@
 
 
 .lista-ul{                                                          
-    display: flex;
-    flex-wrap: nowrap;
-    
+    display: map-get($displays,flexNav);
+    flex-wrap: map-get($displays,wrapNav);
 }
 
 .fondo-nave{
@@ -33,7 +32,7 @@
 
 .logo-nuevo{                                                           
     margin-left: 40px;
-    border-radius: $logoBorder;
+    border-radius:map-get($borders,logoBorder);
     width: 70px;
     height: 70px;
     transition: all 2s;

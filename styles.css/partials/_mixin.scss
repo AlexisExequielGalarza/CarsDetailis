@@ -1,0 +1,7 @@
+@mixin flex ($justify, $fontSize, $color, $botton: 20px, $top: 40px) {
+    display: flex;
+    justify-content: $justify;
+    font-size: $fontSize;
+    margin-bottom: $botton;
+    margin-top: $top;
+}

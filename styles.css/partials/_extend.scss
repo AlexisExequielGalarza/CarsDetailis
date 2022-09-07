@@ -1,0 +1,17 @@
+%flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+
+%flexJustifySpaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+%backgroundPositionCenter {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
