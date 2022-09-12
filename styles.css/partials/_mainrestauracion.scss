@@ -1,0 +1,31 @@
+.imagen-fondo-restauracion{
+    width: 100%;
+    height: 70vh;
+    background-image: map-get($background,gestoriaBackgroundimg);
+    margin: auto;
+    padding: 0%;
+    @extend %backgroundPositionCenter;
+    &::before{
+    content: "";
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    margin: auto;
+    padding: 0%;
+    background: rgba(0, 0, 0, 0.472);
+    }
+}
+
+
+
+.titulo-gestoria{
+    @extend %flexJustifyCenter;  
+    font-size: 45px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   rgb(0, 0, 0);  
+    text-shadow: map-get($shadow,shadowTitulo);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}

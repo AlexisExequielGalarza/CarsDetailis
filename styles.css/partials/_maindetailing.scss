@@ -1,0 +1,104 @@
+.imagen-fondo-detailing{
+    background-image: url(../images/2021-08-25-car-detailing.jpg);
+    @extend %backgroundPositionCenter;
+    height: 70vh;
+    width: 100%;
+    margin: auto;
+    padding: 0%;
+    &::before{
+    content: "";
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    margin: auto;
+    padding: 0%;
+    background: rgba(0, 0, 0, 0.472);
+    }
+}
+
+
+
+.titulo-detailing{
+    @extend %flexJustifyCenter;  
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   rgb(0, 0, 0);   
+    text-shadow:map-get($shadow,shadowTitulo);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.encabezado{
+    padding: 20px;
+    font-weight: bold;
+    font-style: italic; 
+}
+
+
+.descripcion-encabezado{
+    font-style: italic;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.331);
+    color: #ffffff;
+}
+
+.item{
+    list-style: none;
+    padding-left: 20px;
+}
+.espacioh5{
+    padding-left: 20px;
+}
+
+.estilo-img{
+    border-radius: 10px;
+    
+}
+
+
+.cont-img{
+    box-shadow: 15px 15px 20px #000;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.section2{
+    background-color: #000;
+
+}
+
+
+.tituloh3{
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.tituloh4{
+    padding-left: 20px;
+    color: #ffffff;
+}
+ 
+.tituloh5{
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.item2{
+    list-style: none;
+    padding-left: 20px;
+    color: #ffffff;
+}
+
+.descripcion2{
+    font-style: italic;
+    font-size: 16px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.331);
+    color: #ffffff;
+}

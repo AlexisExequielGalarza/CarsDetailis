@@ -5,7 +5,7 @@
   margin: 0%;
 }
 
-.titulo-contacto, .titulo-galeria, .titulo-gestoria, .titulo-detailing, .titulo-principal {
+.titulo-principal, .titulo-contacto, .titulo-galeria, .titulo-gestoria, .titulo-detailing {
   display: flex;
   justify-content: center;
 }
@@ -15,148 +15,135 @@
   justify-content: space-around;
 }
 
-.imagen-fondo-contacto, .imagen-fondo-gestoria, .fondo-section3, .fondo-section1 {
+.fondo-section3, .fondo-section1, .imagen-fondo-contacto, .imagen-fondo-restauracion, .imagen-fondo-detailing {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-/*BODY DE TODOS LOS HTML*/
-body {
-  background-image: radial-gradient(circle at 45.79% 1.85%, #b8b88c 0, #b4ad86 10%, #aa9f7f 20%, #9c8f77 30%, #897d6e 40%, #716a64 50%, #575859 60%, #404a4f 70%, #2a3e45 80%, #16353c 90%, #012e34 100%);
-  font-family: "Quattrocento", serif;
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-/*HEADER*/
-/*BARRA DE NAVEGACION CON LOGO*/
-.lista-ul {
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.fondo-nave {
-  background-color: #716a64;
-  box-shadow: 0 4px 5px #ffffff;
-}
-
-.lista-a {
-  color: rgb(255, 249, 249);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  border-radius: 5px;
-  transition: 0.5s;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 50px;
-}
-.lista-a:hover {
-  background-color: #111;
-  font-size: 17px;
-}
-
-/*LOGO*/
-.logo-nuevo {
-  margin-left: 40px;
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  transition: all 2s;
-}
-.logo-nuevo:hover {
-  transform: rotateY(360deg);
-}
-
-/*TITULOS DE CADA HTML*/
-/*QUIENES SOMOS*/
-.fondo-section1 {
-  background-image: url(../images/Screenshot_20220831-034912_Instagram.jpg);
-}
-
-.titulo-principal {
-  font-size: 80px;
-  margin-top: 150px;
-  margin-bottom: 100px;
-  line-height: 100px;
-  color: #bbb;
-  text-shadow: rgb(255, 254, 254) 2px 1px;
-  text-transform: uppercase;
-}
-
-.descripcion {
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 50px;
-  background-color: rgba(0, 0, 0, 0.512);
-}
-
-.card-contenedor {
-  border-radius: 0%;
-  padding-left: 0%;
-  padding-right: 0%;
-  display: flex;
-  flex-direction: row-reverse;
-  border: none;
-  box-shadow: 2px 4px 10px 0px #000;
-}
-
-.card-imagenes {
-  border-radius: 0%;
-}
-
-/*CARD 1*/
-.fondo-section2 {
-  background-color: #000;
-}
-
-.card-estilo {
-  background-color: rgba(187, 187, 187, 0.801);
-}
-
-.card-titulo {
-  font-style: italic;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-}
-
-/*CARD 2*/
-.fondo-section3 {
-  background-image: url(../images/Screenshot_20220831-034633_Instagram.jpg);
-}
-
-.titulo-detailing {
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  line-height: 100px;
-  color: #bbb;
-  text-shadow: rgb(255, 254, 254) 2px 1px;
-}
-
-/*TARJETAS*/
-.fondo-tarjeta {
-  background-color: #bbb;
-  box-shadow: 2px 4px 10px 0px #000;
-}
-
-.imagen-fondo-gestoria {
-  width: 100%;
+.imagen-fondo-detailing {
+  background-image: url(../images/2021-08-25-car-detailing.jpg);
   height: 70vh;
-  background-image: url(../images/imagenFondoGestoria.jpg);
+  width: 100%;
   margin: auto;
   padding: 0%;
 }
+.imagen-fondo-detailing::before {
+  content: "";
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  margin: auto;
+  padding: 0%;
+  background: rgba(0, 0, 0, 0.472);
+}
 
-.titulo-gestoria {
-  font-size: 30px;
-  margin-top: 50px;
+.titulo-detailing {
+  font-size: 45px;
+  margin-top: 100px;
   margin-bottom: 50px;
   line-height: 100px;
-  color: #bbb;
+  color: rgb(0, 0, 0);
   text-shadow: rgb(255, 254, 254) 2px 1px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.encabezado {
+  padding: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.descripcion-encabezado {
+  font-style: italic;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.331);
+  color: #ffffff;
+}
+
+.item {
+  list-style: none;
+  padding-left: 20px;
+}
+
+.espacioh5 {
+  padding-left: 20px;
+}
+
+.estilo-img {
+  border-radius: 10px;
+}
+
+.cont-img {
+  box-shadow: 15px 15px 20px #000;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.section2 {
+  background-color: #000;
+}
+
+.tituloh3 {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.tituloh4 {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.tituloh5 {
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.item2 {
+  list-style: none;
+  padding-left: 20px;
+  color: #ffffff;
+}
+
+.descripcion2 {
+  font-style: italic;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.331);
+  color: #ffffff;
+}
+
+.imagen-fondo-restauracion {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/tallerdepintura.jpg);
+  margin: auto;
+  padding: 0%;
+}
+.imagen-fondo-restauracion::before {
+  content: "";
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  margin: auto;
+  padding: 0%;
+  background: rgba(0, 0, 0, 0.472);
+}
+
+.titulo-gestoria {
+  font-size: 45px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  line-height: 100px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255, 254, 254) 2px 1px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 }
 
 .titulo-galeria {
@@ -170,12 +157,14 @@ body {
 
 /*FORMULARIO DE CONTACTO*/
 .titulo-contacto {
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
   line-height: 100px;
-  color: #bbb;
+  color: rgb(0, 0, 0);
   text-shadow: rgb(255, 254, 254) 2px 1px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .imagen-fondo-contacto {
@@ -254,6 +243,134 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .titulo-contacto {
+    font-size: 30px;
+  }
+  .parrafo {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .titulo-contacto {
+    font-size: 25px;
+  }
+  .parrafo {
+    font-size: 13px;
+  }
+}
+/*BODY DE TODOS LOS HTML*/
+body {
+  background-image: radial-gradient(circle at 45.79% 1.85%, #b8b88c 0, #b4ad86 10%, #aa9f7f 20%, #9c8f77 30%, #897d6e 40%, #716a64 50%, #575859 60%, #404a4f 70%, #2a3e45 80%, #16353c 90%, #012e34 100%);
+  font-family: "Quattrocento", serif;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*HEADER*/
+/*BARRA DE NAVEGACION CON LOGO*/
+.lista-ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.fondo-nave {
+  background-color: #716a64;
+  box-shadow: 0 4px 5px #ffffff;
+}
+
+.lista-a {
+  color: rgb(255, 249, 249);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+}
+.lista-a:hover {
+  background-color: #111;
+  font-size: 17px;
+}
+
+/*LOGO*/
+.logo-nuevo {
+  margin-left: 40px;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  transition: all 2s;
+}
+.logo-nuevo:hover {
+  transform: rotateY(360deg);
+}
+
+/*TITULOS DE CADA HTML*/
+.titulo-principal {
+  font-size: 80px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  line-height: 100px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255, 254, 254) 2px 1px;
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.fondo-section1 {
+  background-image: url(../images/Screenshot_20220831-034912_Instagram.jpg);
+}
+
+/*QUIENES SOMOS*/
+.descripcion {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: rgba(0, 0, 0, 0.512);
+}
+
+.card-contenedor {
+  border-radius: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  display: flex;
+  flex-direction: row-reverse;
+  border: none;
+  box-shadow: 2px 4px 10px 0px #000;
+}
+
+.card-imagenes {
+  border-radius: 0%;
+}
+
+/*CARD 1*/
+.fondo-section2 {
+  background-color: #000;
+}
+
+.card-estilo {
+  background-color: rgba(187, 187, 187, 0.801);
+}
+
+.card-titulo {
+  font-style: italic;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/*CARD 2*/
+.fondo-section3 {
+  background-image: url(../images/Screenshot_20220831-034633_Instagram.jpg);
+}
+
+/*TARJETAS*/
+.fondo-tarjeta {
+  background-color: #bbb;
+  box-shadow: 2px 4px 10px 0px #000;
+}
+
+@media screen and (max-width: 768px) {
   .titulo-principal {
     display: flex;
     justify-content: center;
@@ -271,7 +388,6 @@ body {
   background-color: #24262b;
   padding-top: 20px;
   padding-bottom: 10px;
-  margin-top: 30px;
   margin-bottom: 0%;
   box-shadow: 0 4px 15px #ffffff;
 }
@@ -372,12 +488,13 @@ body {
   transform: rotate(360deg);
 }
 
-h3 {
+.estiloh5 {
   display: flex;
   justify-content: center;
   font-size: 15px;
   margin-bottom: 20px;
   margin-top: 40px;
+  color: #bbbbbb;
 }
 
 .btn-wsp {

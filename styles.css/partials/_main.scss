@@ -1,22 +1,26 @@
 /*TITULOS DE CADA HTML*/
 
-/*QUIENES SOMOS*/
-.fondo-section1{
-    background-image:map-get($background,inicioBackgroundimg);
-    @extend %backgroundPositionCenter;
-}
-
-
 .titulo-principal {  
     @extend %flexJustifyCenter;  
     font-size: 80px;
     margin-top: 150px;
     margin-bottom: 100px;
     line-height: 100px;
-    color:   #bbb;  
+    color:   rgb(0, 0, 0);  
     text-shadow: map-get($shadow,shadowTitulo);
     text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
+.fondo-section1{
+    background-image:map-get($background,inicioBackgroundimg);
+    @extend %backgroundPositionCenter;
+}
+
+
+/*QUIENES SOMOS*/
+
 
 .descripcion{
     font-size: 20px;
@@ -67,17 +71,6 @@
 }
 
 
-.titulo-detailing{
-    @extend %flexJustifyCenter;  
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    line-height: 100px;
-    color:   #bbb;  
-    text-shadow:map-get($shadow,shadowTitulo);
-}
-
-
 
 /*TARJETAS*/
 
@@ -86,132 +79,6 @@
     background-color: #bbb;
     box-shadow: 2px 4px 10px 0px #000;
 }
-
-
-.imagen-fondo-gestoria{
-    width: 100%;
-    height: 70vh;
-    background-image: map-get($background,gestoriaBackgroundimg);
-    margin: auto;
-    padding: 0%;
-    @extend %backgroundPositionCenter;
-}
-
-.titulo-gestoria{
-    @extend %flexJustifyCenter;  
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    line-height: 100px;
-    color:   #bbb;  
-    text-shadow: map-get($shadow,shadowTitulo);
-}
-
-.titulo-galeria{
-    @extend %flexJustifyCenter; 
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    line-height: 100px;
-    color:   #bbb;  
-    text-shadow: map-get($shadow,shadowTitulo);
-}
-
-
-
-
-/*FORMULARIO DE CONTACTO*/
-
-.titulo-contacto{
-    @extend %flexJustifyCenter;  
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    line-height: 100px;
-    color:   #bbb;  
-    text-shadow: map-get($shadow,shadowTitulo);
-}
-
-.imagen-fondo-contacto{
-    width: 100%;
-    height: 70vh;
-    background-image: map-get($background,contactoBackgroundimg);
-    margin: auto;
-    padding: 0%;
-    @extend %backgroundPositionCenter;
-}
-
-.parrafo{
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.512);
-    color: #fff;
-}
-
-
-.formulario {                                                                   
-    width: 40%;
-    min-width: 250px;
-    padding: 30px;
-    margin: 25px auto;
-    background: rgba(0, 0, 0, .5);
-    box-shadow: map-get($shadow,shadowFormulario);
-    border-radius: map-get($borders,borderFormulario);
-    .formulario p {
-        margin-bottom: 50px;
-        color: #fff;
-        text-align: center;
-        font-size: 1.5em;
-    }
-    
-    .formulario .label .input {
-        width: 100%;
-        padding: 15px 0;
-        font-size: 1em;
-        color: #fff;
-        margin-bottom: 100px;
-        border: none;
-        border-bottom: 1px solid #fff;
-        outline: none;
-        background: transparent;
-        margin: 15px auto;
-    }
-    
-    .coment {
-        width: 100%;
-        height: 124px;
-        margin: 15px auto;
-        padding: 20px;
-        box-sizing: border-box;
-        border: 2px solid rgb(204, 204, 204);
-        border-radius: 4px;
-        background-color: #f8f8f8;
-        font-size: 16px;
-        resize: none;
-    }
-    
-    .form-label{
-        color: #bbbbbb;
-    }
-}
-
-.btn-send{
-    background-color: #4b6de9;
-    text-align: center;
-    height: 40px;
-    width: 80px;
-    box-shadow: map-get($shadow,shadowBoton);
-    border-style: none;
-    border-radius: 10px;
-    &:hover{
-        background: none;
-        border-style: solid 20px #ffffff;
-        color: #ffffff;
-    }
-}
-
 
 
 

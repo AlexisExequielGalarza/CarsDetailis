@@ -1,0 +1,9 @@
+.titulo-galeria{
+    @extend %flexJustifyCenter; 
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 100px;
+    color:   #bbb;  
+    text-shadow: map-get($shadow,shadowTitulo);
+}
