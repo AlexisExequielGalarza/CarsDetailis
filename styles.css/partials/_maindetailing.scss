@@ -1,34 +1,32 @@
+/*Contenido de Servicios de Detailing*/
+
 .imagen-fondo-detailing{
-    background-image: url(../images/2021-08-25-car-detailing.jpg);
-    @extend %backgroundPositionCenter;
-    height: 70vh;
-    width: 100%;
-    margin: auto;
-    padding: 0%;
-    &::before{
-    content: "";
     width: 100%;
     height: 70vh;
-    position: absolute;
     margin: auto;
     padding: 0%;
-    background: rgba(0, 0, 0, 0.472);
-    }
+    background: linear-gradient(rgba(5,7,12, 0.6),rgba(5,7,12, 0.4)),url(../images/2021-08-25-car-detailing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
 
 .titulo-detailing{
     @extend %flexJustifyCenter;  
-    font-size: 45px;
-    margin-top: 100px;
+    font-size: 50px;
+    margin-top: 11%;
     margin-bottom: 50px;
     line-height: 100px;
-    color:   rgb(0, 0, 0);   
-    text-shadow:map-get($shadow,shadowTitulo);
+    color:   #ffffff; 
+    font-weight: bold;   
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 
 .encabezado{
     padding: 20px;
@@ -56,7 +54,6 @@
 
 .estilo-img{
     border-radius: 10px;
-    
 }
 
 
@@ -69,24 +66,13 @@
 
 .section2{
     background-color: #000;
-
-}
-
-
-.tituloh3{
-    padding-left: 20px;
-    color: #ffffff;
-}
-
-.tituloh4{
-    padding-left: 20px;
-    color: #ffffff;
 }
  
-.tituloh5{
+.subtitulos{
     padding-left: 20px;
     color: #ffffff;
 }
+
 
 .item2{
     list-style: none;
@@ -94,11 +80,26 @@
     color: #ffffff;
 }
 
-.descripcion2{
-    font-style: italic;
-    font-size: 16px;
-    padding: 20px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.331);
-    color: #ffffff;
+
+/*Mediaquerys*/
+
+
+@media screen and (max-width: 768px){
+    .titulo-detailing{
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width: 425px){
+    .titulo-detailing{
+        margin-top: 90px;
+    }
+}
+
+
+@media screen and (max-width: 320px){
+    .titulo-detailing{
+        font-size: 30px;
+    }
 }

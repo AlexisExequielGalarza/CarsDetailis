@@ -6,16 +6,21 @@
     margin-top: 150px;
     margin-bottom: 100px;
     line-height: 100px;
-    color:   rgb(0, 0, 0);  
-    text-shadow: map-get($shadow,shadowTitulo);
+    color:   #ffffff;
+    font-weight: bold; 
+    text-shadow: 2px 5px 5px rgb(0, 0, 0);  
     text-transform: uppercase;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
+
 .fondo-section1{
-    background-image:map-get($background,inicioBackgroundimg);
-    @extend %backgroundPositionCenter;
+    background: linear-gradient(rgba(5,7,12, 0.4),rgba(5,7,12, 0.4)),url(../images/FordRaptordeFondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -84,16 +89,23 @@
 
 @media screen and (max-width: 768px) {
 
-    .titulo-principal {  
-        display: flex;
-        justify-content: center;  
-        text-align: center;
+    .titulo-principal {   
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .titulo-principal{
         font-size: 50px;
-        margin-top: 100px;
-        margin-bottom: 50px;
-        line-height: 100px;
-        color:   #bbb;  
-        text-shadow:#000 2px 1px ;
-        
+    }
+
+    .descripcion{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .titulo-principal{
+        font-size: 40px;
     }
 }

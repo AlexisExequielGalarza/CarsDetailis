@@ -15,39 +15,36 @@
   justify-content: space-around;
 }
 
-.fondo-section3, .fondo-section1, .imagen-fondo-contacto, .imagen-fondo-restauracion, .imagen-fondo-detailing {
+.fondo-section3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/*Contenido de Servicios de Detailing*/
 .imagen-fondo-detailing {
-  background-image: url(../images/2021-08-25-car-detailing.jpg);
-  height: 70vh;
-  width: 100%;
-  margin: auto;
-  padding: 0%;
-}
-.imagen-fondo-detailing::before {
-  content: "";
   width: 100%;
   height: 70vh;
-  position: absolute;
   margin: auto;
   padding: 0%;
-  background: rgba(0, 0, 0, 0.472);
+  background: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.4)), url(../images/2021-08-25-car-detailing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .titulo-detailing {
-  font-size: 45px;
-  margin-top: 100px;
+  font-size: 50px;
+  margin-top: 11%;
   margin-bottom: 50px;
   line-height: 100px;
-  color: rgb(0, 0, 0);
-  text-shadow: rgb(255, 254, 254) 2px 1px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .encabezado {
@@ -88,17 +85,7 @@
   background-color: #000;
 }
 
-.tituloh3 {
-  padding-left: 20px;
-  color: #ffffff;
-}
-
-.tituloh4 {
-  padding-left: 20px;
-  color: #ffffff;
-}
-
-.tituloh5 {
+.subtitulos {
   padding-left: 20px;
   color: #ffffff;
 }
@@ -109,70 +96,178 @@
   color: #ffffff;
 }
 
-.descripcion2 {
-  font-style: italic;
-  font-size: 16px;
-  padding: 20px;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.331);
-  color: #ffffff;
+/*Mediaquerys*/
+@media screen and (max-width: 768px) {
+  .titulo-detailing {
+    font-size: 35px;
+  }
 }
-
+@media screen and (max-width: 425px) {
+  .titulo-detailing {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo-detailing {
+    font-size: 30px;
+  }
+}
+/*Contenido de Servicios de Restauracion*/
 .imagen-fondo-restauracion {
   width: 100%;
   height: 70vh;
-  background-image: url(../images/tallerdepintura.jpg);
   margin: auto;
   padding: 0%;
-}
-.imagen-fondo-restauracion::before {
-  content: "";
-  width: 100%;
-  height: 70vh;
-  position: absolute;
-  margin: auto;
-  padding: 0%;
-  background: rgba(0, 0, 0, 0.472);
+  background: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.4)), url(../images/tallerdepintura.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .titulo-gestoria {
-  font-size: 45px;
-  margin-top: 90px;
+  font-size: 50px;
+  margin-top: 11%;
   margin-bottom: 50px;
   line-height: 100px;
-  color: rgb(0, 0, 0);
-  text-shadow: rgb(255, 254, 254) 2px 1px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
   text-align: center;
+}
+
+/*Mediaquerys*/
+@media screen and (max-width: 768px) {
+  .titulo-gestoria {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .titulo-gestoria {
+    margin-top: 90px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo-gestoria {
+    font-size: 30px;
+  }
+}
+/*Contenido de Servicios de Galeria*/
+.main {
+  background-color: #404a4f;
 }
 
 .titulo-galeria {
-  font-size: 30px;
-  margin-top: 50px;
+  font-size: 50px;
+  margin-top: 11%;
   margin-bottom: 50px;
   line-height: 100px;
-  color: #bbb;
-  text-shadow: rgb(255, 254, 254) 2px 1px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-/*FORMULARIO DE CONTACTO*/
+.fondo-galeria {
+  width: 100%;
+  height: 70vh;
+  margin: auto;
+  padding: 0%;
+  background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url(../images/LavadoDeVehiculo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+  padding: 40px 0 20px 0;
+  letter-spacing: 1px;
+}
+
+.subtitulo-d {
+  font-size: 30px;
+  color: #bbbbbb;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.titulo-h6 {
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-secundary {
+  color: white;
+  background: #4b6de9;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
+}
+.btn-secundary:hover {
+  background: none;
+  border-style: solid 20px #ffffff;
+  color: #ffffff;
+}
+
+.text-banner-link {
+  padding: 6px 19px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Mediaquerys*/
+@media screen and (max-width: 768px) {
+  .titulo-galeria {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .titulo-galeria {
+    margin-bottom: 20px;
+    margin-top: 140px;
+  }
+  .titulo-h6 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo-galeria {
+    font-size: 30px;
+  }
+  .titulo-h6 {
+    text-align: center;
+  }
+}
+/*Contenido de Contacto*/
+/*Formulario de Contacto*/
 .titulo-contacto {
-  font-size: 40px;
-  margin-top: 50px;
+  font-size: 50px;
+  margin-top: 11%;
   margin-bottom: 50px;
   line-height: 100px;
-  color: rgb(0, 0, 0);
-  text-shadow: rgb(255, 254, 254) 2px 1px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .imagen-fondo-contacto {
   width: 100%;
   height: 70vh;
-  background-image: url(../images/DetalleInterior.jpg);
   margin: auto;
   padding: 0%;
+  background: linear-gradient(rgba(5, 7, 12, 0.6), rgba(5, 7, 12, 0.4)), url(../images/DetalleInterior.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .parrafo {
@@ -242,9 +337,10 @@
   color: #ffffff;
 }
 
+/*Mediaquerys*/
 @media screen and (max-width: 768px) {
   .titulo-contacto {
-    font-size: 30px;
+    font-size: 35px;
   }
   .parrafo {
     font-size: 15px;
@@ -252,10 +348,15 @@
 }
 @media screen and (max-width: 425px) {
   .titulo-contacto {
-    font-size: 25px;
+    margin-bottom: 20px;
   }
   .parrafo {
-    font-size: 13px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo-contacto {
+    font-size: 30px;
   }
 }
 /*BODY DE TODOS LOS HTML*/
@@ -311,14 +412,19 @@ body {
   margin-top: 150px;
   margin-bottom: 100px;
   line-height: 100px;
-  color: rgb(0, 0, 0);
-  text-shadow: rgb(255, 254, 254) 2px 1px;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: 2px 5px 5px rgb(0, 0, 0);
   text-transform: uppercase;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .fondo-section1 {
-  background-image: url(../images/Screenshot_20220831-034912_Instagram.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(../images/FordRaptordeFondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /*QUIENES SOMOS*/
@@ -372,15 +478,20 @@ body {
 
 @media screen and (max-width: 768px) {
   .titulo-principal {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .titulo-principal {
     font-size: 50px;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    line-height: 100px;
-    color: #bbb;
-    text-shadow: #000 2px 1px;
+  }
+  .descripcion {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .titulo-principal {
+    font-size: 40px;
   }
 }
 /*FOOTER*/
@@ -455,37 +566,45 @@ body {
 }
 
 .footer-col .social-links a {
-  display: flex;
   height: 40px;
   width: 40px;
   margin: 0 10px 10px 0;
+  text-decoration: none;
 }
 
-.redes-instagram {
-  transition: all 0.6s;
+.btn-facebook {
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
 }
-.redes-instagram:hover {
-  border-radius: 100%;
-  background-color: #c32aac;
-  transform: rotate(360deg);
-}
-
-.redes-facebook {
-  transition: all 0.6s;
-}
-.redes-facebook:hover {
-  border-radius: 100%;
-  background-color: #597ce5;
-  transform: rotate(360deg);
+.btn-facebook:hover {
+  font-size: 40px;
 }
 
-.redes-gmail {
-  transition: all 0.6s;
+.btn-instagram {
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
 }
-.redes-gmail:hover {
-  border-radius: 100%;
-  background-color: #de0909;
-  transform: rotate(360deg);
+.btn-instagram:hover {
+  color: #e91e63;
+  font-size: 40px;
+}
+
+.boton-gmail {
+  font-size: 35px;
+  line-height: 55px;
+  text-align: center;
+  color: #bbbbbb;
+  transition: all 0.3s ease;
+}
+.boton-gmail:hover {
+  color: #e91e1e;
+  font-size: 40px;
 }
 
 .estiloh5 {
@@ -497,6 +616,7 @@ body {
   color: #bbbbbb;
 }
 
+/*Boton de Whatsapp*/
 .btn-wsp {
   position: fixed;
   width: 50px;
