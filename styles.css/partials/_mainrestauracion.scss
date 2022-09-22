@@ -14,7 +14,6 @@
     @extend %flexJustifyCenter;  
     margin-top: 11%;
     margin-bottom: 50px;
-    line-height: 100px;
     @extend %fontStyleTitulos;
 }
 
@@ -23,19 +22,19 @@
 
 
 @media screen and (max-width: 768px){
-    .titulo-gestoria{
+    .titulo-restauracion{
         font-size: 35px;
     }
 }
 
 @media screen and (max-width: 425px){
-    .titulo-gestoria{
+    .titulo-restauracion{
         margin-top: 90px;
     }
 }
 
 @media screen and (max-width: 320px){
-    .titulo-gestoria{
+    .titulo-restauracion{
         font-size: 30px;
     }
 }

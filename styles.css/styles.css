@@ -23,7 +23,7 @@
 }
 
 .titulo-principal, .titulo-contacto, .titulo-galeria, .titulo-restauracion, .titulo-detailing {
-  font-size: 50px;
+  line-height: 100%;
   font-weight: bold;
   text-shadow: 2px 5px 5px rgb(0, 0, 0);
   text-transform: uppercase;
@@ -59,7 +59,6 @@
 .titulo-detailing {
   margin-top: 11%;
   margin-bottom: 50px;
-  line-height: 100px;
 }
 
 .encabezado {
@@ -138,22 +137,21 @@
 .titulo-restauracion {
   margin-top: 11%;
   margin-bottom: 50px;
-  line-height: 100px;
 }
 
 /*Mediaquerys de Servicio de Restauracion*/
 @media screen and (max-width: 768px) {
-  .titulo-gestoria {
+  .titulo-restauracion {
     font-size: 35px;
   }
 }
 @media screen and (max-width: 425px) {
-  .titulo-gestoria {
+  .titulo-restauracion {
     margin-top: 90px;
   }
 }
 @media screen and (max-width: 320px) {
-  .titulo-gestoria {
+  .titulo-restauracion {
     font-size: 30px;
   }
 }
@@ -165,7 +163,6 @@
 .titulo-galeria {
   margin-top: 11%;
   margin-bottom: 50px;
-  line-height: 100px;
 }
 
 .fondo-galeria {
@@ -244,7 +241,6 @@
 /*Formulario de Contacto*/
 .titulo-contacto {
   margin-top: 150px;
-  line-height: 100px;
 }
 
 .imagen-fondo-contacto {
@@ -340,7 +336,7 @@
 @media screen and (max-width: 320px) {
   .titulo-contacto {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 70px;
   }
   .parrafo {
     font-size: 15px;
@@ -399,7 +395,6 @@ body {
   font-size: 80px;
   margin-top: 150px;
   margin-bottom: 100px;
-  line-height: 100px;
 }
 
 .fondo-section1 {

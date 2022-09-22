@@ -6,7 +6,6 @@
 .titulo-contacto{
     @extend %flexJustifyCenter;  
     margin-top: 150px;
-    line-height: 100px;
     @extend %fontStyleTitulos;
 }
 
@@ -130,7 +129,7 @@
 @media screen and (max-width: 320px){
     .titulo-contacto{
         font-size: 30px;
-        margin-top: 20px;
+        margin-top: 70px;
     }
 
     .parrafo{
