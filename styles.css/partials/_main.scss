@@ -1,4 +1,6 @@
-/*TITULOS DE CADA HTML*/
+
+/*Contenido de Pagina de Inicio*/
+
 
 .titulo-principal {  
     @extend %flexJustifyCenter;  
@@ -6,11 +8,7 @@
     margin-top: 150px;
     margin-bottom: 100px;
     line-height: 100px;
-    color:   #ffffff;
-    font-weight: bold; 
-    text-shadow: 2px 5px 5px rgb(0, 0, 0);  
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    @extend %fontStyleTitulos
 }
 
 
@@ -28,11 +26,7 @@
 
 
 .descripcion{
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 50px;
-    background-color: rgba(0, 0, 0, 0.512);
+    @extend %fontStyleDescripcion;
 }
 
 .card-contenedor{
@@ -85,6 +79,8 @@
     box-shadow: 2px 4px 10px 0px #000;
 }
 
+
+/*Mediaquerys de Inicio*/
 
 
 @media screen and (max-width: 768px) {
